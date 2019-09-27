@@ -11,7 +11,7 @@ import datetime
 import dbhandler
 import os
 
-bot=commands.Bot(description="",command_prefix="-",pm_help=False)
+bot=commands.Bot(description="",command_prefix="/",pm_help=False)
 bot.remove_command('help')
 
 #			Commands
@@ -321,5 +321,4 @@ async def on_member_remove(member):
 """
 #			Running
 
-token = os.getenv('TOKEN')
-bot.run(token)
+bot.run(os.getenv('TOKEN'))
