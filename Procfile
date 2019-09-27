@@ -1,1 +1,1 @@
-worker: python avviebotpy.py
+worker: python bossy.py
