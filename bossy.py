@@ -10,6 +10,7 @@ import random
 import datetime
 import dbhandler
 import os
+os.environ['DATABASE_URL'] = <URL>
 
 bot=commands.Bot(description="",command_prefix="/",pm_help=False)
 bot.remove_command('help')
